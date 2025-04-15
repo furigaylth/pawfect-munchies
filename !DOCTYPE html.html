@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PawCrepe Sundae - Business Proposal</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #fff8dc, #e0f7fa);
+      color: #333;
+    }
+    header {
+      position: relative;
+      height: 500px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 1px 1px 4px #000;
+      padding: 20px;
+      text-align: center;
+      overflow: hidden;
+    }
+    header img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin: 10px 0;
+      animation: bounce 1s ease-in-out;
+    }
+    header p {
+      font-size: 1.3rem;
+      margin: 5px 0;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+    .tagline {
+      font-size: 1.2rem;
+      font-style: italic;
+      margin-top: 15px;
+      animation: fadeIn 2s ease-in-out;
+    }
+    .info-bar {
+      background-color: #c8e6c9;
+      color: #2e7d32;
+      text-align: center;
+      padding: 10px;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+    .section {
+      padding: 30px 20px;
+      text-align: center;
+    }
+    .section h2 {
+      color: #f57c00;
+      cursor: pointer;
+      margin-bottom: 10px;
+      font-size: 2rem;
+    }
+    .accordion {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: left;
+    }
+    .accordion-item {
+      background: #fff;
+      border: 1px solid #ddd;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      overflow: hidden;
+      transition: box-shadow 0.3s;
+    }
+    .accordion-item:hover {
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .accordion-header {
+      background-color: #ffecb3;
+      padding: 15px 20px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: #f57c00;
+      transition: background-color 0.3s;
+    }
+    .accordion-header:hover {
+      background-color: #ffe082;
+    }
+    .accordion-content {
+      padding: 15px 20px;
+      display: none;
+    }
+    .accordion-content.active {
+      display: block;
+      animation: slideDown 0.5s ease-in-out forwards;
+    }
+
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+      40% { transform: translateY(-15px); }
+      60% { transform: translateY(-8px); }
+    }
+    @keyframes slideDown {
+      from {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    /* 📱 Mobile-friendly tweaks */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      header p, .tagline {
+        font-size: 1rem;
+      }
+      .accordion-header {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+  <img src="Home.jpg" alt="Pawfect Munchies Banner" />
+</header>
+
+<div style="text-align: center; padding: 20px;">
+  <h1 style="font-size: 3rem; color: #f57c00; animation: bounce 1s ease-in-out;">Welcome to Pawfect Munchies</h1>
+  <p class="tagline">
+  Your go-to destination for pet-human shared treats. From our signature PawCrepe Sundaes to tail-wagging waffles, everything is made to delight both furry and human taste buds alike!
+</p>
+
+
+
+  <div class="section">
+    <h2>Who We Are</h2>
+    <div class="accordion" id="whoWeAre">
+      <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleItem(this)">Why?</div>
+        <div class="accordion-content">
+          <p>As passionate pet lovers, we know how strong the bond is between humans and their fur babies—both dogs and cats. But when it comes to food, we often have to say no to sharing our favorite treats. We created Pawfect Munchies because we believe that joy, especially in the form of food, is better when shared—with all your furry companions.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleItem(this)">What?</div>
+        <div class="accordion-content">
+          <p>Pawfect Munchies is a pet-human food venture offering innovative, nutritious treats designed to be safely enjoyed by humans, dogs, and cats. Our flagship product, the PawCrepe Sundae, features a soft, sweet potato-based crepe filled with banana “ice cream” and topped with pet-safe and human-approved ingredients.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleItem(this)">How?</div>
+        <div class="accordion-content">
+          <p>We create recipes with carefully selected ingredients that are delicious for humans while remaining safe and healthy for both dogs and cats. Our revenue comes from direct product sales through pet cafés, pop-up stalls, and online ordering platforms. We plan to expand into retail and subscriptions as demand grows.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<section class="problem-section">
+  <div class="problem-title">
+    <h2>🐾 Problem / Opportunity</h2>
+  </div>
+  <div class="problem-box">
+    <div class="icon-block">
+      <span class="icon">📍</span>
+      <div class="content">
+        <h3>Content</h3>
+        <p>This problem occurs during everyday moments when pet parents are enjoying snacks or desserts—such as during movie nights, café dates, or simply relaxing at home—and their pets look on eagerly. These seemingly small but frequent moments create emotional dissonance for pet owners who want to include their furry companions in the experience but can’t safely do so.</p>
+      </div>
+    </div>
+    <div class="icon-block">
+      <span class="icon">👥</span>
+      <div class="content">
+        <h3>Customers</h3>
+        <p>The problem is most common among dog and cat owners who view their pets not just as animals, but as members of the family. These are typically millennials and Gen Z pet parents, who are known for prioritizing emotional bonding, personalized experiences, and lifestyle alignment with their pets.</p>
+      </div>
+    </div>
+    <div class="icon-block">
+      <span class="icon">🔍</span>
+      <div class="content">
+        <h3>Problem</h3>
+        <p>There is a clear divide between what humans can eat and what pets can safely consume. Most human food contains ingredients—like sugar, chocolate, or dairy—that are harmful to pets. On the flip side, pet-specific treats are usually formulated for animals alone and are not palatable (or safe) for humans. This creates a lack of shared experiences in one of the most emotional aspects of human life: food.</p>
+      </div>
+    </div>
+    <div class="icon-block">
+      <span class="icon">💔</span>
+      <div class="content">
+        <h3>Emotional Impact</h3>
+        <p>Pet owners feel torn—guilty for not sharing, yet concerned about harming their pets. It creates a bittersweet experience when pets beg or look on sadly during treat time. This emotional strain undermines the joy of the moment, and for some, leads to them indulging their pets with inappropriate treats, compromising health for inclusion.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .problem-section {
+    background: #fffdf5;
+    padding: 50px 20px;
+    animation: fadeInUp 1s ease-in-out;
+  }
+
+  .problem-title {
+    text-align: center;
+    margin-bottom: 30px;
+    animation: bounce 0.8s ease-in-out;
+  }
+
+  .problem-title h2 {
+    font-size: 2.5rem;
+    color: #ff9800;
+    font-weight: bold;
+  }
+
+  .problem-box {
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .icon-block {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .icon-block:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  }
+
+  .icon-block .icon {
+    font-size: 2rem;
+  }
+
+  .icon-block .content h3 {
+    margin: 0;
+    color: #f57c00;
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+  }
+
+  .icon-block .content p {
+    margin: 0;
+    color: #444;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
+
+
+  <script>
+    function toggleItem(element) {
+      const allContents = document.querySelectorAll('.accordion-content');
+      const content = element.nextElementSibling;
+
+      // Close other open items
+      allContents.forEach(item => {
+        if (item !== content) item.classList.remove('active');
+      });
+
+      // Toggle this one
+      content.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
